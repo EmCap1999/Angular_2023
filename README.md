@@ -1,6 +1,9 @@
-# MyFirstApp
+# Angular Course Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+
+This web application is created through the 'Angular - The Complete Guide - 2023' course available on the Udemy platform.
+https://www.udemy.com/course/the-complete-guide-to-angular-2/
 
 ## Development server
 
