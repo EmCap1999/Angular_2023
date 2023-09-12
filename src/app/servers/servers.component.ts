@@ -3,6 +3,8 @@
 import { Component } from '@angular/core';
 
 @Component({
+  // selector: '[app-servers]',
+  // selector:'.app-servers',
   selector: 'app-servers',
   template: `
     <app-server></app-server>
