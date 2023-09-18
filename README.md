@@ -7,7 +7,7 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/
 
 # Here is the planning of the App:
 
-We want to implement a Website that helps us to manage ingredients orders.  
+We want to implement a Website that helps us to manage some recipes books and the ingredients needed for these recipes.
 So, in the root component, we will have:
 
 - feature 1: "Shooping List" - components: Shopping List, Shopping List Edit - Model: Ingredient
