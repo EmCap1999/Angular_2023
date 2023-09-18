@@ -10,8 +10,8 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/
 We want to implement a Website that helps us to manage ingredients orders.  
 So, in the root component, we will have:
 
-- fetaure 1: "Shooping List" - components: Shopping List, Shopping List Edit - Model: Ingredient
-- fetaure 2: "Recipe Book" - components: Recipe List, Recipe Item, Recipe Detail - Model: Recipe
+- feature 1: "Shooping List" - components: Shopping List, Shopping List Edit - Model: Ingredient
+- feature 2: "Recipe Book" - components: Recipe List, Recipe Item, Recipe Detail - Model: Recipe
 
 ## Development server
 
