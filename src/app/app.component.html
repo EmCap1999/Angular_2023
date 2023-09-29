@@ -5,18 +5,39 @@
       <br><br>
       <ul class="list-group">
         <div *ngIf="onlyOdd">
-          <li class="list-group-item" [ngClass]="{odd:odd % 2 !==0}"
-            [ngStyle]="{backgroundColor: odd % 2 !== 0 ? 'yellow' : 'transparent'}" *ngFor="let odd of oddNumbers">
+          <li class="list-group-item" 
+          [ngClass]="{odd:odd % 2 !==0}"
+          [ngStyle]="{backgroundColor: odd % 2 !== 0 
+            ? 'yellow' 
+            : 'transparent'}" 
+          *ngFor="let odd of oddNumbers">
             {{odd}}
           </li>
         </div>
-        <div *ngIf="!onlyOdd">
-          <li class="list-group-item" *ngFor="let even of evenNumbers" [ngClass]="{odd:even % 2 !==0}"
-            [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow' : 'transparent'}">
+
+        <!-- <div *ngIf="!onlyOdd">
+          <li class="list-group-item" 
+          *ngFor="let even of evenNumbers" 
+          [ngClass]="{odd:even % 2 !==0}"
+          [ngStyle]="{backgroundColor: even % 2 !== 0 
+            ? 'yellow' 
+            : 'transparent'}">
             {{even}}
           </li>
-        </div>
+        </div> -->
         
+        <ng-template [ngIf]="!onlyOdd">
+          <div>
+            <li class="list-group-item" 
+            *ngFor="let even of evenNumbers" 
+            [ngClass]="{odd:even % 2 !==0}"
+            [ngStyle]="{backgroundColor: even % 2 !== 0 
+              ? 'yellow' 
+              : 'transparent'}">
+              {{even}}
+            </li>
+          </div>
+        </ng-template>
       </ul>
       <p appBasicHighlight>Style me with basic directive!</p>
       <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with a better directive!</p>
